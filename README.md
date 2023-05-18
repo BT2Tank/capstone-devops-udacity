@@ -135,7 +135,7 @@ eksctl delete cluster -f cluster.yaml
 ## Demo of the Project Pipeline
 ![EC2_Instance_Lunch_for_Jenkins](./Screenshots/1-SecurityGroup.png)
 ![Jenkins_System_Status_Running](./Screenshots/2-Jenkins_System_Status_Running.png)
-![Cloudformation_Stacks_for_Cluster](./Screenshots/4-Cloudformation.png)
+![Cloudformation_Stacks_for_Cluster](./Screenshots/4-CloudFormation.png)
 ![EKS_Cluster](./Screenshots/5-EKS_Cluster.png)
 ![Jenkins_Pipeline_Install_ependency](./Screenshots/6-Jenkins_Pipeline_Install_ependency.png)
 ![Jenkins_Pipeline_Upload_Docker_Image](./Screenshots/9-Jenkins_Pipeline_Upload_Docker_Image.png)
