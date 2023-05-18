@@ -72,7 +72,7 @@ rm awscliv2.zip
 
 ### Install kubectl
 ```
-curl -o kubectl https://amazon-eks.s3.us-east-1.amazonaws.com/1.16.8/2020-04-16/bin/linux/amd64/kubectl
+curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.16.8/2020-04-16/bin/linux/amd64/kubectl
 chmod +x ./kubectl
 sudo mv kubectl /bin/
 kubectl version --short --client
@@ -95,7 +95,7 @@ eksctl create cluster -f cluster.yaml
 ### Verify kubectl Configuration
 ```
 kubectl get svc
-aws eks --region us-east-1 update-kubeconfig --name clustercapstone
+aws eks --region us-west-2 update-kubeconfig --name clustercapstone
 ```
 
 ### Cluster Service Check
@@ -133,15 +133,15 @@ eksctl delete cluster -f cluster.yaml
 * **Step-11:** After complete the project remove the cluster
 
 ## Demo of the Project Pipeline
-![EC2_Instance_Lunch_for_Jenkins](./Application_deployment_output_images/1-EC2_Instance_Lunch_for_Jenkins.png)
-![Jenkins_System_Status_Running](./Application_deployment_output_images/2-Jenkins_System_Status_Running.png)
-![Cloudformation_Stacks_for_Cluster](./Application_deployment_output_images/4-Cloudformation_Stacks_for_Cluster.png)
-![EKS_Cluster](./Application_deployment_output_images/5-EKS_Cluster.png)
-![Jenkins_Pipeline_Install_ependency](./Application_deployment_output_images/6-Jenkins_Pipeline_Install_ependency.png)
-![Jenkins_Pipeline_Upload_Docker_Image](./Application_deployment_output_images/9-Jenkins_Pipeline_Upload_Docker_Image.png)
-![Image_in_the_Docker_Hub](./Application_deployment_output_images/10-Image_in_the_Docker_Hub.png)
-![kubectl_Service_Output](./Application_deployment_output_images/18-kubectl_Service_Output.png)
-![Deployment_Website](./Application_deployment_output_images/19-Deployment_Website.png)
+![EC2_Instance_Lunch_for_Jenkins](./Screenshots/1-SecurityGroup.png)
+![Jenkins_System_Status_Running](./Screenshots/2-Jenkins_System_Status_Running.png)
+![Cloudformation_Stacks_for_Cluster](./Screenshots/4-Cloudformation.png)
+![EKS_Cluster](./Screenshots/5-EKS_Cluster.png)
+![Jenkins_Pipeline_Install_ependency](./Screenshots/6-Jenkins_Pipeline_Install_ependency.png)
+![Jenkins_Pipeline_Upload_Docker_Image](./Screenshots/9-Jenkins_Pipeline_Upload_Docker_Image.png)
+![Image_in_the_Docker_Hub](./Screenshots/10-DockerImage.png)
+![kubectl_Service_Output](./Screenshots/18-kubectl_Service_Output.png)
+![Deployment_Website](./Screenshots/19-Deployment_Website.png)
 
 
 ## Resources
